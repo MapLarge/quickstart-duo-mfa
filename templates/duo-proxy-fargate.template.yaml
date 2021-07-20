@@ -263,8 +263,8 @@ Parameters:
   RadiusTimeout:
     Type: Number
     Description: >
-      Time in seconds until the secondary authentication times out.
-    Default: 10
+      Timeout window in seconds. Tip: timeout x retries > 60s.
+    Default: 60
     ConstraintDescription: 'Must be in the range [10-600].'
     MinValue: 10
     MaxValue: 600
@@ -272,7 +272,7 @@ Parameters:
   RadiusRetries:
     Type: Number
     Description: >
-      Number of attempts the user has until secondary authentication fails.
+      Total number of retry attempts. Tip: timeout x retries > 60s.
     Default: 3
     ConstraintDescription: 'Must be in the range [3-10].'
     MinValue: 3
