@@ -232,15 +232,15 @@ Parameters:
   RadiusTimeout:
     Type: Number
     Description: >
-      Timeout window in seconds. Tip: timeout x retries > 60s.
-    Default: 60
-    ConstraintDescription: 'Must be in the range [10-600].'
+      Timeout window (in seconds) for each RADIUS request.
+    Default: 10
+    ConstraintDescription: 'Must be in the range [10-50].'
     MinValue: 10
-    MaxValue: 600
+    MaxValue: 50
   RadiusRetries:
     Type: Number
     Description: >
-      Total number of retry attempts. Tip: timeout x retries > 60s.
+      Total number of retries allowed for each RADIUS request.
     Default: 3
     ConstraintDescription: 'Must be in the range [3-10].'
     MinValue: 3
