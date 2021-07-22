@@ -433,8 +433,6 @@ Resources:
         DirectoryServiceId: !GetAtt 'ADStack.Outputs.DirectoryID'
         RadiusProxyServerCount: !Ref 'RadiusProxyServerCount'
         RadiusPortNumber: !Ref 'RadiusPortNumber'
-        RadiusTimeout: !Ref 'RadiusTimeout'
-        RadiusRetries: !Ref 'RadiusRetries'
         DuoFailMode: !Ref 'DuoFailMode'
         AdSync: !Ref AdSync
         adReadOnlyUser: !Ref adReadOnlyUser
